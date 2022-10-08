@@ -7,7 +7,6 @@ h4 {
 }
 
 h2 {
-  background: #69c9c0;
   color: #f8d8f8;
   display: inline-block;
   font-weight: normal;
@@ -58,24 +57,8 @@ a:hover {
   border-color: #69c9c0;
 }
 
-[role=banner] > h1 {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #f8d8f8;
-}
-
 .summary {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #f8d8f8;
   padding: 15% 0;
-}
-.summary p:last-child {
-  border-top: 1px solid #69c9c0;
-  margin-top: 1em;
-  padding-top: 1.5em;
 }
 .summary a {
   color: #f8d8f8;
@@ -86,6 +69,18 @@ a:hover {
   color: #b048b0;
   margin-left: -30%;
   padding: 5% 5% 5% 30%;
+}
+
+.sidebar {
+  background-color: #f8d8f8;
+  color: black;
+  font-family: "Silkscreen", cursive;
+}
+
+.pixel {
+  background-color: none;
+  color: #b048b0;
+  font-family: "Silkscreen", cursive;
 }
 
 .intro {
@@ -109,10 +104,10 @@ body {
   padding: 1em;
 }
 
-main p:first-of-type, main p:nth-of-type(2), main p:nth-of-type(3) {
-  color: #f8d8f8;
+main > p:first-of-type, main > p:nth-of-type(2), main > p:nth-of-type(3) {
+  color: #b048b0;
 }
-main p:first-of-type a, main p:nth-of-type(2) a, main p:nth-of-type(3) a {
+main > p:first-of-type a, main > p:nth-of-type(2) a, main > p:nth-of-type(3) a {
   color: inherit;
 }
 
@@ -160,18 +155,4 @@ section {
   border: 1px solid;
   margin: 0.5em;
   padding: 1em;
-}
-
-.uppercase {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #b048b0;
-}
-
-.uppercase-light {
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #f8d8f8;
 }/*# sourceMappingURL=style-pattern.css.map */
