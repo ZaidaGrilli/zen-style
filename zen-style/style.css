@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f86cd8;
+  padding: 5%;
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 85%;
+  color: #b048b0;
+  background-color: #b048b0;
+  margin: 0;
+  padding: 1em;
+}/*# sourceMappingURL=style.css.map */
