@@ -105,7 +105,6 @@ body {
   font-family: "Chakra Petch", sans-serif;
   font-size: 85%;
   color: #b048b0;
-  background-color: #b048b0;
   margin: 0;
   padding: 1em;
 }
@@ -118,7 +117,6 @@ main p:first-of-type a, main p:nth-of-type(2) a, main p:nth-of-type(3) a {
 }
 
 section {
-  background-color: #69c9c0;
   padding: 1em;
   margin: 1em;
 }
