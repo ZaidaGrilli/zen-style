@@ -1,3 +1,95 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Silkscreen", cursive;
+  margin: 0;
+}
+
+h2 {
+  color: #f8d8f8;
+  display: inline-block;
+  font-weight: normal;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+}
+
+h1 {
+  color: #f8d8f8;
+  font-weight: 900; /* Heavy */
+  font-size: 6em;
+  letter-spacing: 1px;
+  line-height: 1em;
+}
+
+h3 {
+  font-size: 2.25em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  padding: 0.5em 0 0.25em 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 200; /* Thin */
+  letter-spacing: 1px;
+  line-height: 1em;
+  margin: 0.5em 0;
+}
+
+p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding: 0.5em 0;
+  margin: 0;
+}
+
+a {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #b048b0;
+  text-decoration: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+a:hover {
+  border-color: #69c9c0;
+}
+
+.summary {
+  padding: 15% 0;
+}
+.summary a {
+  color: #f8d8f8;
+}
+
+.preamble {
+  color: #b048b0;
+  margin-left: -30%;
+}
+
+.main {
+  background-color: #f86cd8;
+  color: #b048b0;
+}
+
+.sidebar {
+  background-color: #f8d8f8;
+  color: black;
+  font-family: "Silkscreen", cursive;
+}
+
+.pixel {
+  background-color: none;
+  color: #b048b0;
+  font-family: "Silkscreen", cursive;
+}
+
+.intro {
+  padding: 5%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -11,7 +103,18 @@ body {
   font-family: "Chakra Petch", sans-serif;
   font-size: 85%;
   color: #b048b0;
-  background-color: #b048b0;
+  background-color: #f86cd8;
   margin: 0;
   padding: 1em;
-}/*# sourceMappingURL=style.css.map */
+}
+
+ul {
+  list-style: none;
+}
+
+footer, .sidebar {
+  background-color: #69c9c0;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
