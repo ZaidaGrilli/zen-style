@@ -4,6 +4,7 @@ h3,
 h4 {
   font-family: "Silkscreen", cursive;
   margin: 0;
+  text-align: center;
 }
 
 h2 {
@@ -12,11 +13,13 @@ h2 {
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
+  text-align: center;
 }
 
 h1 {
   color: #f8d8f8;
-  font-weight: 900; /* Heavy */
+  font-weight: 900;
+  /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
   line-height: 1em;
@@ -24,7 +27,8 @@ h1 {
 
 h3 {
   font-size: 2.25em;
-  font-weight: 200; /* Thin */
+  font-weight: 200;
+  /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   padding: 0.5em 0 0.25em 0;
@@ -32,7 +36,8 @@ h3 {
 
 h4 {
   font-size: 1.5em;
-  font-weight: 200; /* Thin */
+  font-weight: 200;
+  /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   margin: 0.5em 0;
@@ -66,7 +71,6 @@ a:hover {
 
 .preamble {
   color: #b048b0;
-  margin-left: -30%;
 }
 
 .main {
@@ -115,6 +119,33 @@ ul {
 footer, .sidebar {
   background-color: #69c9c0;
   text-align: center;
+}
+
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+section h3, .main h3 {
+  width: 30vw;
+  height: 30vh;
+  align-items: center;
+  background: url("cloud_image.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: kenburns-top;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 /*# sourceMappingURL=style.css.map */
