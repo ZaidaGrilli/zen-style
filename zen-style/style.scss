@@ -25,3 +25,10 @@ body {
   margin: 0;
   padding: 1em;
 }
+ul{
+  list-style: none;
+}
+footer, .sidebar{
+  background-color: $accent1;
+  text-align: center;
+}

@@ -12,7 +12,7 @@
   flex-flow: $direction $wrap;
 }
 
-@mixin set-style($bg, $paragraph-color){
+@mixin set-style($bg, $paragraph-color) {
   background-color: $bg;
   color: $paragraph-color;
   font-family: $fonts-headline;
@@ -25,31 +25,42 @@ h3,
 h4 {
   font-family: $fonts-headline;
   margin: 0;
+  text-align: center;
 }
+
 h2 {
   color: $text-light;
   display: inline-block;
   font-weight: normal;
   margin-bottom: 1em;
   padding: 0.5em 1em;
+  text-align: center;
 }
+
 h1 {
   color: $text-light;
-  font-weight: 900; /* Heavy */
+  font-weight: 900;
+  /* Heavy */
   font-size: 6em;
   letter-spacing: 1px;
   line-height: 1em;
 }
+
 h3 {
   font-size: 2.25em;
-  font-weight: 200; /* Thin */
+  font-weight: 200;
+  /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   padding: 0.5em 0 0.25em 0;
+  
 }
+
+
 h4 {
   font-size: 1.5em;
-  font-weight: 200; /* Thin */
+  font-weight: 200;
+  /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
   margin: 0.5em 0;
@@ -66,6 +77,7 @@ a {
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
 }
+
 a:hover {
   border-color: $accent1;
 }
