@@ -1,28 +1,27 @@
 @use "variables" as *; //this puts all the variables in the global namespace.
-@use 'atoms';
-@use 'molecules';
-@use 'organisms' as o;
+@use 'atoms' as *;
+@use 'molecules' as *;
+@use 'organisms' as *;
 
 * {
   box-sizing: border-box;
 }
 html {
-  background-color: $background-color;
-  padding: 5%;
+ background-color: $background-color;
+ padding: 5%;
 }
 
+.summary {
+    font-family: $fonts-headline;
+    color: $secondary;
+    text-align: center;
+    font-size: 2.5em;
+}
 body {
   font-family: $fonts-body;
   font-size: 85%;
   color: $text-dark;
-  background-color: $background-color;
+  background-color: $primary;
   margin: 0;
   padding: 1em;
-}
-ul{
-  list-style: none;
-}
-footer, .sidebar{
-  background-color: $accent1;
-  text-align: center;
 }

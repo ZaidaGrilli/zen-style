@@ -39,9 +39,6 @@ h4 {
 }
 
 p {
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 1em;
-  line-height: 1.5em;
   padding: 0.5em 0;
   margin: 0;
 }
@@ -99,22 +96,18 @@ html {
   padding: 5%;
 }
 
+.summary {
+  font-family: "Silkscreen", cursive;
+  color: #f8b4f8;
+  text-align: center;
+  font-size: 2.5em;
+}
+
 body {
   font-family: "Chakra Petch", sans-serif;
   font-size: 85%;
   color: #b048b0;
-  background-color: #f86cd8;
+  background-color: #b048b0;
   margin: 0;
   padding: 1em;
-}
-
-ul {
-  list-style: none;
-}
-
-footer, .sidebar {
-  background-color: #69c9c0;
-  text-align: center;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

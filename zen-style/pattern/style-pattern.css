@@ -151,6 +151,10 @@ section {
   background-color: #b048b0;
 }
 
+.secondary {
+  background-color: #f86cd8;
+}
+
 .element {
   border: 1px solid;
   margin: 0.5em;
