@@ -6,24 +6,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
   box-sizing: border-box;
 }
+
 html {
- background-color: $background-color;
- padding: 5%;
+  background-color: $background-color;
+  padding: 5%;
 }
 
 h2 {
-  text-align:center;
+  text-align: center;
   font-size: 3em;
 }
+
 .summary {
   font-family: $fonts-headline;
   color: $secondary;
   text-align: center;
   font-size: 2.3em;
 }
+
 body {
   font-family: $fonts-body;
   font-size: 85%;
@@ -32,13 +36,17 @@ body {
   margin: 0;
   padding: 1em;
 }
-ul{
+
+ul {
   list-style: none;
 }
-footer, .sidebar{
+
+footer,
+.sidebar {
   background-color: $accent1;
   text-align: center;
 }
+
 @keyframes kenburns-top {
   0% {
     -webkit-transform: scale(1) translateY(0);
@@ -66,5 +74,3 @@ section h3, .main h3 {
   //animation-timing-function:;
   animation-direction: alternate-reverse;
 }
-
-
