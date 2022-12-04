@@ -148,4 +148,23 @@ section h3, .main h3 {
   animation-direction: alternate-reverse;
 }
 
+.zen-resources {
+  animation: slide 5s linear infinite;
+  background-image: url("grass.jpg");
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes slide {
+  0% {
+    background-position: -60px, -20px;
+  }
+  50% {
+    background-position: -170px, -200px;
+  }
+  100% {
+    background-position: -60px, -20px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
