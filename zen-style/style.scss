@@ -4,9 +4,6 @@
 @use 'organisms' as *;
 
 
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-
 * {
   box-sizing: border-box;
 }
@@ -47,7 +44,7 @@ footer,
   text-align: center;
 }
 
-@keyframes kenburns-top {
+@keyframes cloud {
   0% {
     -webkit-transform: scale(1) translateY(0);
     transform: scale(1) translateY(0);
@@ -61,16 +58,24 @@ footer,
     transform-origin: top;
   }
 }
-section h3, .main h3 {
+.main h3 {
   width: 30vw;
   height: 30vh;
-  align-items: center;  
+   
   background: url("cloud_image.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  animation-name: kenburns-top;
+  animation-name: cloud;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   //animation-timing-function:;
   animation-direction: alternate-reverse;
+}
+
+@media (min-width: 700px){
+  .main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
 }

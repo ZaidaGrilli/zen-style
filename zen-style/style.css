@@ -19,16 +19,16 @@ h2 {
 
 h1 {
   color: #f8d8f8;
-  font-weight: 900;
+  font-weight: 600;
   /* Heavy */
-  font-size: 8em;
+  font-size: 4em;
   letter-spacing: 1px;
   line-height: 1em;
 }
 
 h3 {
-  font-size: 2.25em;
-  font-weight: 200;
+  font-size: 2em;
+  font-weight: 100;
   /* Thin */
   letter-spacing: 1px;
   line-height: 1em;
@@ -147,7 +147,7 @@ footer,
   text-align: center;
 }
 
-@keyframes kenburns-top {
+@keyframes cloud {
   0% {
     -webkit-transform: scale(1) translateY(0);
     transform: scale(1) translateY(0);
@@ -161,17 +161,24 @@ footer,
     transform-origin: top;
   }
 }
-section h3, .main h3 {
+.main h3 {
   width: 30vw;
   height: 30vh;
-  align-items: center;
   background: url("cloud_image.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  animation-name: kenburns-top;
+  animation-name: cloud;
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
+}
+
+@media (min-width: 700px) {
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
