@@ -66,6 +66,8 @@ a:hover {
 
 .summary {
   padding: 15% 0;
+  
+  
 }
 .summary a {
   color: #f8d8f8;
@@ -73,6 +75,8 @@ a:hover {
 
 .preamble {
   color: #b048b0;
+  text-align: center;
+  
 }
 
 .main {
@@ -92,9 +96,11 @@ a:hover {
 @keyframes slide {
   0% {
     background-position: -60px, -20px;
+    
   }
   50% {
     background-position: -170px, -200px;
+    
   }
   100% {
     background-position: -60px, -20px;
@@ -105,10 +111,15 @@ a:hover {
   background-color: none;
   color: #b048b0;
   font-family: "Silkscreen", cursive;
+  
 }
 
 .intro {
   padding: 5%;
+  background-image: url(background_image.jpg);
+  background-size: 100%;
+  background-position: bottom ;
+  background-repeat:repeat-x;
 }
 
 * {
@@ -118,6 +129,7 @@ a:hover {
 html {
   background-color: #f86cd8;
   padding: 5%;
+  
 }
 
 h2 {
@@ -130,6 +142,7 @@ h2 {
   color: #f8b4f8;
   text-align: center;
   font-size: 2.3em;
+
 }
 
 body {
