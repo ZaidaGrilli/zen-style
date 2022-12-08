@@ -13,6 +13,31 @@ html {
   padding: 5%;
 }
 
+h1 {
+  color: transparent;
+  pointer-events: none;
+  font-size: 0px;
+  &::before {
+    content: "CSS";
+    color: $text-light;
+    font-size: 28vw;
+    display: block;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.8em;
+    font-weight: 700;
+  }
+  &::after {
+    content: "Zen Garden";
+    color: $text-light;
+    display: block;
+    font-size: 8vw;
+    padding-bottom: 0.5em;
+
+
+  }
+}
+
 h2 {
   text-align: center;
   font-size: 3em;
@@ -28,9 +53,26 @@ h2 {
 .intro {
   padding: 5%;
   background-image: url(cloud-background.jpg);
-  background-size: 100%;
+  background-size: 150%;
   background-position: bottom;
   background-repeat:repeat-x;
+  padding-bottom: 10em;
+}
+
+.preamble {
+  position: absolute;
+  font-size: smaller;
+  left: 0;
+  right: 0;
+  width: 80vw;
+  display: block;
+  margin: 0 auto;
+  z-index: 500;
+  padding: 1.6em;
+  padding-top: 4em;
+  
+  
+  
 }
 
 
@@ -42,9 +84,17 @@ body {
   margin: 0;
   padding: 1em;
 }
-main {
+.explanation {
+  padding-top: 10em;  
+
+ }
+
+.main {
   position: relative;
-  z-index: -3;
+  p, h3{
+    padding: 1.5em 2em;
+  }
+  
 }
 ul {
   list-style: none;
@@ -58,10 +108,31 @@ footer,
 
 @keyframes cloud {
   0% {
+    
     -webkit-transform: scale(1) translateY(0);
     transform: scale(1) translateY(0);
     -webkit-transform-origin: 50% 16%;
     transform-origin: 50% 16%;
+  }
+  10%{
+    transform: scale(1) translate(-10%, 0%);
+
+  }
+  20%{
+    transform: scale(1) translate(10%, -15%);
+
+  }
+  30%{
+    transform: scale(1) translate(20%, 20%);
+
+  }
+  40%{
+    transform: scale(1) translate(50%, -60%);
+
+  }
+  70%{
+    transform: scale(1) translate(80%, 20%);
+
   }
   100% {
     -webkit-transform: scale(1.25) translateY(-15px);
@@ -74,22 +145,25 @@ footer,
 .main h3 {
   position: relative;
   z-index: 5;
+  padding-top: 3em;
 }
 .main h3::after {
-  width: 30vw;
-  height: 30vh;
+  width: 150px;
+  height: 100px;
   content: " ";
   display: block;
   background: url("cloud.png");
   background-position: center;
   background-repeat: no-repeat;
   animation-name: cloud;
-  animation-duration: 4s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   //animation-timing-function:;
   animation-direction: alternate-reverse;
-  z-index: 4;
-  position: relative;
+  z-index: -1;
+  position: absolute;
+  top: 15%;
+  -moz-animation-timing-function: ease-in-out;
 }
 
 
