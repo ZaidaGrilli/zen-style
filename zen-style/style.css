@@ -84,12 +84,16 @@ a:hover {
   color: #b048b0;
 }
 
+.design-selection {
+  display: flex;
+}
+
 .sidebar {
   background-color: #f8d8f8;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: "Silkscreen", cursive;
   animation: slide 5s linear infinite;
-  background-image: url("images.jpg");
+  background-image: url("grass-2.5.png");
   background-size: 55%;
   width: 100%;
   height: 100%;
