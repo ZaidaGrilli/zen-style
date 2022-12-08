@@ -25,6 +25,15 @@ h2 {
   font-size: 2.3em;
 }
 
+.intro {
+  padding: 5%;
+  background-image: url(cloud-background.jpg);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat:repeat-x;
+}
+
+
 body {
   font-family: $fonts-body;
   font-size: 85%;
@@ -33,7 +42,10 @@ body {
   margin: 0;
   padding: 1em;
 }
-
+main {
+  position: relative;
+  z-index: -3;
+}
 ul {
   list-style: none;
 }
@@ -58,11 +70,17 @@ footer,
     transform-origin: top;
   }
 }
+
 .main h3 {
+  position: relative;
+  z-index: 5;
+}
+.main h3::after {
   width: 30vw;
   height: 30vh;
-   
-  background: url("cloud_image.jpeg");
+  content: " ";
+  display: block;
+  background: url("cloud.png");
   background-position: center;
   background-repeat: no-repeat;
   animation-name: cloud;
@@ -70,7 +88,10 @@ footer,
   animation-iteration-count: infinite;
   //animation-timing-function:;
   animation-direction: alternate-reverse;
+  z-index: 4;
+  position: relative;
 }
+
 
 @media (min-width: 700px){
   .main{
