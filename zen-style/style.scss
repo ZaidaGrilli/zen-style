@@ -62,7 +62,7 @@ footer,
   width: 30vw;
   height: 30vh;
    
-  background: url("cloud_image.jpeg");
+  background: url("cloud.png");
   background-position: center;
   background-repeat: no-repeat;
   animation-name: cloud;
@@ -78,4 +78,13 @@ footer,
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
   }
+  ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 15em;
+    margin-inline-end: 15em;
+  }  
+  
 }

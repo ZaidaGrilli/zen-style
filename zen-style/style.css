@@ -54,10 +54,6 @@ a {
   color: #b048b0;
   text-decoration: none;
   transition: border-color 0.2s ease-in-out;
-  -webkit-transition: border-color 0.2s ease-in-out;
-  -moz-transition: border-color 0.2s ease-in-out;
-  -ms-transition: border-color 0.2s ease-in-out;
-  -o-transition: border-color 0.2s ease-in-out;
 }
 
 a:hover {
@@ -66,8 +62,6 @@ a:hover {
 
 .summary {
   padding: 15% 0;
-  
-  
 }
 .summary a {
   color: #f8d8f8;
@@ -75,8 +69,6 @@ a:hover {
 
 .preamble {
   color: #b048b0;
-  text-align: center;
-  
 }
 
 .main {
@@ -90,18 +82,15 @@ a:hover {
   font-family: "Silkscreen", cursive;
   animation: slide 5s linear infinite;
   background-image: url("images.jpg");
-  background-size: 55%;
   width: 100%;
   height: 100%;
 }
 @keyframes slide {
   0% {
     background-position: -60px, -20px;
-    
   }
   50% {
     background-position: -170px, -200px;
-    
   }
   100% {
     background-position: -60px, -20px;
@@ -112,15 +101,10 @@ a:hover {
   background-color: none;
   color: #b048b0;
   font-family: "Silkscreen", cursive;
-  
 }
 
 .intro {
   padding: 5%;
-  background-image: url(background_image.jpg);
-  background-size: 100%;
-  background-position: bottom;
-  background-repeat:repeat-x;
 }
 
 * {
@@ -130,7 +114,6 @@ a:hover {
 html {
   background-color: #f86cd8;
   padding: 5%;
-  
 }
 
 h2 {
@@ -143,7 +126,6 @@ h2 {
   color: #f8b4f8;
   text-align: center;
   font-size: 2.3em;
-
 }
 
 body {
@@ -182,7 +164,7 @@ footer,
 .main h3 {
   width: 30vw;
   height: 30vh;
-  background: url("cloud_image.jpeg");
+  background: url("cloud.png");
   background-position: center;
   background-repeat: no-repeat;
   animation-name: cloud;
@@ -196,6 +178,14 @@ footer,
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+  }
+  ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 15em;
+    margin-inline-end: 15em;
   }
 }
 
