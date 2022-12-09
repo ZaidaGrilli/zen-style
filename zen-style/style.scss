@@ -47,7 +47,8 @@ h2 {
   font-family: $fonts-headline;
   color: $secondary;
   text-align: center;
-  font-size: 2.3em;
+  font-size: 1.5em;
+  
 }
 
 .intro {
@@ -61,15 +62,19 @@ h2 {
 
 .preamble {
   position: absolute;
-  font-size: smaller;
   left: 0;
   right: 0;
   width: 80vw;
   display: block;
   margin: 0 auto;
   z-index: 500;
-  padding: 1.6em;
+  padding: 1em;
   padding-top: 4em;
+  padding-bottom: 3em;
+  font-size: larger;
+  & h3{
+    font-size: 1.5em;
+  }
   
   
   
@@ -85,7 +90,7 @@ body {
   padding: 1em;
 }
 .explanation {
-  padding-top: 10em;  
+  padding-top: 60em;  
 
  }
 
@@ -95,6 +100,20 @@ body {
     padding: 1.5em 2em;
   }
   
+}
+
+.participation{
+  margin-top: 5em;
+  & h3{
+    padding: 0.5em;
+  
+  }
+}
+
+.requirements{
+  & h3{
+    padding: 0.5em;
+  }
 }
 ul {
   list-style: none;
@@ -127,7 +146,7 @@ footer,
 
   }
   40%{
-    transform: scale(1) translate(50%, -60%);
+    transform: scale(1) translate(50%, -80%);
 
   }
   70%{
@@ -143,21 +162,27 @@ footer,
 }
 
 .main h3 {
-  width: 30vw;
-  height: 30vh;
-   
-  background: url("cloud_image.jpeg");
+  position: relative;
+  z-index: 5;
+  padding-top: 3em;
+  text-align: left;
+}
+.main h3::after {
+  width: 150px;
+  height: 100px;
+  content: " ";
+  display: block;
+  background: url("cloud.png");
   background-position: center;
   background-repeat: no-repeat;
   animation-name: cloud;
   animation-duration: 10s;
   animation-iteration-count: infinite;
-  //animation-timing-function:;
   animation-direction: alternate-reverse;
   z-index: -1;
   position: absolute;
   top: 15%;
-  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
 }
 
 
@@ -166,5 +191,45 @@ footer,
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
+  }
+  ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 15em;
+    margin-inline-end: 15em;
+    & a{
+      color: $text-light;
+    }
+  }
+  .summary{
+    & a{
+      color: $accent1;
+    }
+  }
+  footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+  }
+  .participation{
+      padding-top: 10em;
+  }
+  .explanation{
+    padding-top: 15em;
+  }
+  .requirements{
+    grid-column: 1/3;
+    grid-row: 2;
+    & h3{
+      text-align: center;
+      
+    }
+
+  }
+  .benefits{
+    grid-column: 1/3;
+
   }
 }
